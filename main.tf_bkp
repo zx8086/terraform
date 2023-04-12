@@ -1,0 +1,9 @@
+module "elasticstack_elasticsearch_cluster_settings" {
+  source = "./modules/elasticstack_elasticsearch_cluster_settings"
+  required_providers {
+    elasticstack = {
+      source  = "elastic/elasticstack"
+      version = "~> 0.5.0"
+    }
+  }
+}
